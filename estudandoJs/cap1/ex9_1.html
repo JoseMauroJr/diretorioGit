@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+    /*programa lê o valor do jantar, calcula e informa 
+    o valor da taxa do garçom(10%) e o valor total a ser pago
+    */
+
+    // lê o valor do jantar
+    let jantar = Number(prompt('Valor do Jantar R$: '))
+
+    //calcula os dados
+    let garcom = jantar * 0.10
+    let total = jantar + garcom
+
+    // apresenta as respostas
+    alert('Taxa Garçom R$: ' + garcom.toFixed(2) + '\nTotal R$: ' + total.toFixed(2))
+</script>

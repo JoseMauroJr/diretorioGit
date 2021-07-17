@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+    /* Programa lê valor total de uma conta, o número de clientes
+    e calcula e informa o valor a ser pago por cliente
+    */
+
+    // lê valor total da conta e número de cliente
+    let conta = Number(prompt('Valor da Conta R$: '))
+    let clientes = Number(prompt('Nº de Clientes: '))
+
+    // calcula valor da conta por número de cliente
+    let valorPorCliente = conta / clientes
+
+    //exibe valor por clientes
+    alert('Valor por Cliente R$: ' + valorPorCliente.toFixed(2))
+</script>
