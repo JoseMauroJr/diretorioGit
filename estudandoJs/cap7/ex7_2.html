@@ -1,0 +1,28 @@
+<script>
+    function calcularMedia() {
+        //se não foram passados argumentos
+        if (arguments.length == 0) {
+            alert('Informe, no mínimo, uma nota')
+            return
+        }
+        //vai acumular a soma das notas
+        var soma = 0
+        //obtém a quantidade de argumentos
+        var numNotas = arguments.length
+
+        //percorre os argumentos
+        for (var i = 0; i < numNotas; i++) {
+            soma += arguments[i]            //soma o valor dos argumentos
+        }
+        //calcula a média
+        var media = soma / numNotas
+        alert('Média das Notas: ' + media.toFixed(1))
+    }
+    //exemplos de chamada da função com nº de argumentos diferentes
+    calcularMedia(5, 6, 8)
+    calcularMedia(2, 10)
+    calcularMedia(7.5, 10, 8, 9.5)
+    calcularMedia()
+
+
+</script>
